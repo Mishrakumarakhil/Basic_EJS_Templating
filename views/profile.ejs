@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>EJS Templating</title>
+</head>
+<body>
+
+
+   <%- include('partials/nav'); -%>
+<h1>Hello : <%= person %></h1><br>
+<p><strong>Age :</strong> <%= info.age %></p><br>
+<p><strong>Job Role :</strong><%= info.job %></p>
+<br>
+<h2>Hobbies</h2>
+<ul>
+   <% info.hobbies.forEach((item)=>{ %>
+
+      <li><%= item %></li>
+
+   <% }); %>
+</ul>
+<br>
+
+<p><strong>Contact :</strong><%= info.contact %></p>
+</body>
+
+
+
+<html>
